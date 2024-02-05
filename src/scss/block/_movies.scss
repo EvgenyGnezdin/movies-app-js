@@ -1,0 +1,16 @@
+.movie {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(200px, 250px));
+    justify-content: center;
+    gap: 40px;
+    .movie__list-item {
+        img{
+            border-radius: 10px;
+            width: 100%;
+            height: 350px;
+        }
+    }
+}

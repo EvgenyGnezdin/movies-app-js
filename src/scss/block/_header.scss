@@ -1,50 +1,73 @@
-.news {
-    
-    .news__header {
+.header {
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    height: 72px;
+    padding: 0 1em;
+    .header__logo {
         display: flex;
-        flex-direction: column ;
-        justify-content: end;
         align-items: center;
-        background-image: url("https://catherineasquithgallery.com/uploads/posts/2023-01/1674319635_catherineasquithgallery-com-p-gorod-fon-serii-foto-13.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 45vh;
-        .news__header-title {
-            font-size: 50px;
-            font-weight: 700;
-            margin-bottom: 120px;
-            color: rgb(30, 29, 29);
-        }
-
-        .news__search {
-            width: 700px;
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 100px;
-
-            .news__search-input {
-                background-color: rgb(30, 29, 29);
-                color: white;
-                width: 700px;
-                border-radius: 15px;
-                outline: none;
-                border: none;
-                height: 24px;
-                font-size: 18px;
-                padding: 10px;
-            }
-            .news__search-btn {
-                padding: 10px;
-                width: 130px;
-                border-radius: 20px;
-                border: none;
-                background-color:rgb(30, 29, 29);
-                color: white;
-                font-size: 14px;
-                font-weight: 700;
-            }
+        width: 179px;
+        max-width: 179px;
+        img{
+            width: 101px;
+            height: 38px;
         }
     }
+    .header__title {
+        font-size: 30px;
+        font-weight: 700;
+        color: white;
+    } 
     
+    .header__search {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 370px;
+        input {
+            width: 300px;
+            border: none;
+            background-color: #122840;
+            color: #93a8bf;
+            padding: 10px 0 10px 16px;
+            box-sizing: border-box;
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: space-between;
+            height: 44px;
+            border-radius: 8px;
+            font-size: 17px;
+            line-height: 24px;
+            cursor: text;
+            transition: all .5s;
+        }
+        input:focus {
+            color: #001424;
+            outline: none;
+            transition: background-color .5s linear;
+            border-color: #e2e5eb;
+            background-color: #ffffff;
+        }
+        input:focus::placeholder {
+            color: transparent;
+        }
+
+        button {
+            background: transparent;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 24px;
+            border: none;
+            outline: none;
+            background: none;
+            box-shadow: none;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
 }

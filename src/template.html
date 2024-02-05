@@ -3,22 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <title>Movies</title>
 </head>
 <body>
-    <div class="news">
-        <div class="news__header">
-            <h1 class="news__header-title">TopNews</h1>
-            <div class="news__search">
-                <input type="text" class="news__search-input" value="" placeholder="Введите тему по которой хотите просмотреть новости">
-                <button class="news__search-btn">Поиск</button>
+    <div class="movies">
+        <div class="container">
+            <div class="header">
+                <div class="header__logo">
+                    <img src="./images/logo.svg" alt="movie-logo">
+                </div>
+                <div class="header__title">
+                    MovieHub
+                </div>
+                <form class="header__search">
+                    <input type="text" class="header__search-input" placeholder="Поиск">
+                    <button class="header__search-bth">Поиск</button>
+                </form>
+            </div>
+            <div class="movie">
+            </div>
+            <div class="modal">
             </div>
         </div>
-        <div class="container">
-            <ul class="news__list">            
-            </ul>
-        </div>
     </div>
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>

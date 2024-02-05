@@ -1,35 +1,17 @@
-import '../scss/style.scss';
-import { getData } from './getData';
+import { getMovies, searchMovies } from './getMovies'
 
-window.addEventListener('DOMContentLoaded', async () => {
-    let searchBtn = document.querySelector('.news__search-btn')
-    let listNews = document.querySelector('.news__list')
+import '../scss/style.scss'
 
-    
+window.addEventListener('DOMContentLoaded', () => {
+getMovies()
 
 
-    if(localStorage.getItem('valueInput')){
-        getData(JSON.parse(localStorage.getItem('valueInput')))
-    }
-
-    searchBtn.addEventListener('click', () => {
-        let valueInput = document.querySelector('.news__search-input').value
-        localStorage.setItem('valueInput', JSON.stringify(valueInput))
-        listNews.innerHTML = '';
-        if(valueInput. length === 0) {
-            listNews.innerHTML = '<h1 class="news__valid">Пустая строка!</h1>'
-        } else {
-            getData(valueInput)
-        }
-    })
+  //Функция поиска фильмов
+  document.querySelector('form').addEventListener('submit', (e) => {
+    e.preventDefault()
+    searchMovies(document.querySelector('.header__search-input').value)
+  })
 })
-
-
-
-
-
-
-
 
 
 
